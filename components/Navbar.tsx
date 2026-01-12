@@ -29,6 +29,10 @@ const Navbar: React.FC = () => {
     { name: 'Coleções', href: '#coleções' },
   ];
 
+  const openWhatsApp = () => {
+    window.open('https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20visita%20exclusiva%20Lumina.', '_blank');
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${isScrolled || isMenuOpen ? 'glass-nav py-3' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-4 sm:px-6 flex justify-between items-center">
@@ -56,7 +60,7 @@ const Navbar: React.FC = () => {
 
         <div className="flex items-center gap-4">
           <button
-            onClick={() => window.location.href = '#whatsapp'}
+            onClick={openWhatsApp}
             className={`hidden sm:block px-5 py-2 border transition-all duration-500 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-tighter ${isScrolled || isMenuOpen
               ? 'border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-white'
               : 'border-white text-white hover:bg-white hover:text-[#1a1a1a]'
@@ -95,7 +99,7 @@ const Navbar: React.FC = () => {
             </a>
           ))}
           <button
-            onClick={() => { setIsMenuOpen(false); window.location.href = '#whatsapp'; }}
+            onClick={() => { setIsMenuOpen(false); openWhatsApp(); }}
             className="sm:hidden w-full py-3 bg-[#d4af37] text-white rounded-full text-xs font-bold uppercase"
           >
             Agendar Visita
