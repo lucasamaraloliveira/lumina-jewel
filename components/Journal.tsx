@@ -6,13 +6,13 @@ const Journal: React.FC = () => {
         {
             title: "A Arte da Lapidação Manual",
             excerpt: "Descubra como nossos mestres transformam pedras brutas em prismas de luz pura através de técnicas centenárias.",
-            image: "https://images.unsplash.com/photo-1584305116340-07bf1068832a?auto=format&fit=crop&q=80&w=800",
+            image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=800",
             tag: "Artesanato"
         },
         {
             title: "Ouro Ético: Um Compromisso Eterno",
             excerpt: "Nossa jornada para garantir que cada grama de metal precioso em nossas joias respeite a terra e as pessoas.",
-            image: "https://images.unsplash.com/photo-1610492314604-a5307525287f?auto=format&fit=crop&q=80&w=800",
+            image: "https://images.unsplash.com/photo-1531995811006-35cb42e1a022?auto=format&fit=crop&q=80&w=800",
             tag: "Sustentabilidade"
         }
     ];
