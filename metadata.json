@@ -1,0 +1,7 @@
+{
+  "name": "Lumina Jewels Boutique",
+  "description": "Uma boutique online de joias exclusivas onde o brilho e a raridade se encontram em cada detalhe.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
